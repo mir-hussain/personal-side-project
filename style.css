@@ -125,13 +125,14 @@ nav > ul > li > a {
 
 .image-container {
   display: flex;
+  flex-wrap: wrap;
   height: 500px;
   padding: 0 100px;
   justify-content: space-evenly;
 }
 
 .work-image {
-  width: 300px;
+  width: 85%;
   position: relative;
   left: 25px;
   top: 25px;
@@ -223,7 +224,7 @@ nav > ul > li > a {
 }
 
 .skill-container {
-  height: 500px;
+  height: 600px;
   display: flex;
   justify-content: space-evenly;
   padding: 0 100px;
@@ -255,6 +256,18 @@ nav > ul > li > a {
   height: 600px;
 }
 
+.skill-1 {
+  background-image: url(images/skill-bg-1.png);
+}
+
+.skill-2 {
+  background-image: url(images/skill-bg-2.png);
+}
+
+.skill-3 {
+  background-image: url(images/skill-bg-3.png);
+}
+
 .skill-elements > p {
   color: #363958;
   font-size: 24px;
@@ -269,8 +282,38 @@ nav > ul > li > a {
   background-color: white;
   margin-left: 10px;
   width: 330px;
-  height: 490px;
+  height: 489px;
   border-radius: 24px;
+}
+
+/* fifth section starts from here */
+
+.fifth-section {
+  height: 500px;
+  margin: 0 10%;
+}
+
+.company {
+  background-color: green;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.company-name-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 98%;
+  height: 92%;
+  border-radius: 20px;
+  background-color: red;
+}
+
+.company-name img {
+  width: 250px;
+  padding: 10%;
 }
 
 /* footer starts from here */
