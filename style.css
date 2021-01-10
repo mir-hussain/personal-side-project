@@ -1,5 +1,5 @@
 body {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
@@ -120,7 +120,7 @@ nav > ul > li > a {
 /* third section starts from here  */
 
 .third-section {
-  height: 750px;
+  height: 700px;
 }
 
 .image-container {
@@ -204,7 +204,7 @@ nav > ul > li > a {
 /* forth section starts from here */
 
 .forth-section {
-  height: 900px;
+  height: 800px;
 }
 
 .forth-section > div > h1 {
@@ -290,11 +290,37 @@ nav > ul > li > a {
 
 .fifth-section {
   height: 500px;
-  margin: 0 10%;
+  margin: 0 125px;
+}
+
+.collab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.collab > h1 {
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+  font-size: 36px;
+  color: #f46060;
+  margin: 0 0 10px 0;
+  font-size: 48px;
+}
+
+.collab > h1 > span {
+  color: #363958;
+}
+
+.collab > p {
+  text-align: center;
+  font-size: 24px;
+  margin: 0 0 30px 0;
 }
 
 .company {
-  background-color: green;
+  background-image: linear-gradient(45deg, #5D69E9, #4225B6);
   border-radius: 25px;
   display: flex;
   justify-content: center;
@@ -306,9 +332,9 @@ nav > ul > li > a {
   display: flex;
   flex-wrap: wrap;
   width: 98%;
-  height: 92%;
+  height: 280px;
   border-radius: 20px;
-  background-color: red;
+  background-color: white;
 }
 
 .company-name img {
@@ -319,7 +345,7 @@ nav > ul > li > a {
 /* footer starts from here */
 
 .footer-container {
-  height: 600px;
+  height: 450px;
 }
 
 .work-inquiry {
@@ -365,4 +391,26 @@ nav > ul > li > a {
   color: #363958;
   font-size: 32px;
   font-weight: bold;
+}
+
+.social-icon-container {
+  width: 30px;
+  position: fixed;
+  bottom: 0;
+  left: 20px;
+}
+
+.social-icon {
+  margin-bottom: 10px;
+}
+
+.social-icon > img {
+  width: 100%;
+}
+
+.line {
+  border-left: 3px #363958 solid;
+  height: 50px;
+  width: 50px;
+  margin-left: 13px;
 }
