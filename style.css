@@ -1,5 +1,9 @@
+html{
+  scroll-behavior: smooth;  
+}
+
 body {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
@@ -20,11 +24,45 @@ p {
   padding: 10px 30px;
   border-radius: 5px;
   font-weight: 600;
+  transition: color 300ms ease;
+}
+
+.btn:hover {
+  color: #363958;
 }
 
 /* navbar starts from here */
 
 nav {
+  height: 60px;
+  background-color: lightblue;
+}
+
+nav > ul {
+  list-style: none;
+  margin: 0;
+  padding:0;
+  /* width: 500px; */
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+
+nav > ul > li {
+  padding: 30px 20px;
+  display: inline-block;
+  line-height: 0;
+}
+
+nav > ul > li > a {
+  color: #363958;
+}
+
+nav > ul > li:hover {
+  background-color: red;
+}
+
+/* nav {
   height: 100px;
 }
 
@@ -45,7 +83,7 @@ nav > ul > li {
 
 nav > ul > li > a {
   color: #363958;
-}
+} */
 
 /* main starts from here */
 
@@ -53,6 +91,7 @@ nav > ul > li > a {
 
 .first-section {
   height: 550px;
+  margin-top: 30px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -272,7 +311,13 @@ nav > ul > li > a {
   color: #363958;
   font-size: 24px;
   text-align: center;
+  transition: color 300ms ease ;
 }
+
+.skill-elements > p:hover {
+  color:#f46060;
+}
+
 
 .skill-elements > P:first-child {
   padding-top: 20px;
@@ -345,7 +390,7 @@ nav > ul > li > a {
 /* footer starts from here */
 
 .footer-container {
-  height: 450px;
+  height: 400px;
 }
 
 .work-inquiry {
@@ -375,6 +420,7 @@ nav > ul > li > a {
   background-image: linear-gradient(45deg, #ff8063, #f46060);
   padding: 10px 20px;
   border-radius: 5px;
+  font-family: "Roboto", sans-serif;
 }
 
 .gmail {
@@ -397,15 +443,24 @@ nav > ul > li > a {
   width: 30px;
   position: fixed;
   bottom: 0;
-  left: 20px;
+  right: 20px;
 }
 
 .social-icon {
   margin-bottom: 10px;
 }
 
-.social-icon > img {
+.social-icon > a > img {
   width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.social-icon > a > img:hover {
+  transform: scale(1.2);
+}
+
+.social-icon-container:hover .line {
+  border-left: 3px #ff8063 solid;
 }
 
 .line {
@@ -413,4 +468,5 @@ nav > ul > li > a {
   height: 50px;
   width: 50px;
   margin-left: 13px;
+  transition: all 0.5s ease-in-out;
 }
